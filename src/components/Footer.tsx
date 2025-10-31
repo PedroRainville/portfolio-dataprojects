@@ -11,7 +11,7 @@ const Footer = () => {
           </p>
           <div className="flex justify-center gap-6 mb-6">
             <a
-              href="mailto:meigarom@email.com"
+              href="mailto:pedro.rainville@email.com"
               className="text-foreground hover:text-primary transition-colors"
               aria-label="Email"
             >
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center text-sm text-muted-foreground border-t border-border pt-6">
-          <p>© {new Date().getFullYear()} Meigarom D. F. Lopes. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Pedro Rainville. Todos os direitos reservados.</p>
           <p className="mt-2">Desenvolvido com React, TypeScript e Tailwind CSS</p>
         </div>
       </div>

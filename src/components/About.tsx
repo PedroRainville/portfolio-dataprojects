@@ -38,7 +38,7 @@ const About = () => {
                 <Mail className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-xs text-muted-foreground">Email:</p>
-                  <p className="text-sm">meigarom@email.com</p>
+                  <p className="text-sm">pedro.rainville@email.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -60,7 +60,7 @@ const About = () => {
                 <div>
                   <p className="text-xs text-muted-foreground">LinkedIn:</p>
                   <a href="#" className="text-sm text-primary hover:underline">
-                    linkedin.com/in/meigarom
+                    linkedin.com/in/pedrorainville
                   </a>
                 </div>
               </div>
