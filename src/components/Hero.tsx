@@ -12,7 +12,7 @@ const Hero = () => {
             Pedro Rainville
           </h1>
           <p className="text-2xl md:text-3xl text-muted-foreground mb-8">
-            Cientista de Dados | Desenvolvedor Full Stack
+            Analista de Dados | Cientista de Dados
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <a

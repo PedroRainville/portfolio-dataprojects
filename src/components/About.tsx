@@ -13,17 +13,15 @@ const About = () => {
             </CardHeader>
             <CardContent className="space-y-4 text-sm">
               <p>
-                Cientista de Dados Senior com mais de 4 anos de experiência em
-                projetos analíticos de métricas, análise de dados em problemas
-                ambientais, na especialidade da construção e melhoria dos
-                produtos financeiros em ML para instituições altamente
-                escaláveis de negócios.
+                Analista e Cientista de Dados com experiência em análise de dados, 
+                visualização de informações e desenvolvimento de insights estratégicos 
+                para tomada de decisão. Especialista em transformar dados brutos em 
+                informações valiosas para o negócio.
               </p>
               <p>
-                Tenho grande contato com diversas linguagens de programação,
-                ferramentas para processamento de Big Data, algoritmos de
-                Machine Learning, frameworks de Deep Learning, Processamento de
-                Linguagem Natural e automação de processos.
+                Amplo conhecimento em ferramentas de análise e visualização de dados, 
+                bancos de dados SQL, Python para análise estatística, Power BI, Excel 
+                avançado e metodologias ágeis para projetos de dados.
               </p>
             </CardContent>
           </Card>
@@ -268,49 +266,82 @@ const About = () => {
               
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-semibold mb-3">Linguagens de Programação</h4>
+                  <h4 className="font-semibold mb-3">Análise de Dados</h4>
                   <div className="space-y-2">
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm">JavaScript / TypeScript</span>
-                        <span className="text-xs text-muted-foreground">Junior</span>
+                        <span className="text-sm">Python (Pandas, NumPy)</span>
+                        <span className="text-xs text-muted-foreground">Intermediário</span>
                       </div>
                       <div className="h-2 bg-secondary rounded-full">
-                        <div className="h-full bg-primary rounded-full w-[40%]"></div>
+                        <div className="h-full bg-primary rounded-full w-[60%]"></div>
                       </div>
                     </div>
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm">Python</span>
-                        <span className="text-xs text-muted-foreground">Junior</span>
+                        <span className="text-sm">SQL (MySQL, PostgreSQL)</span>
+                        <span className="text-xs text-muted-foreground">Intermediário</span>
                       </div>
                       <div className="h-2 bg-secondary rounded-full">
-                        <div className="h-full bg-primary rounded-full w-[40%]"></div>
+                        <div className="h-full bg-primary rounded-full w-[65%]"></div>
                       </div>
                     </div>
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm">SQL</span>
+                        <span className="text-sm">R</span>
                         <span className="text-xs text-muted-foreground">Junior</span>
                       </div>
                       <div className="h-2 bg-secondary rounded-full">
-                        <div className="h-full bg-primary rounded-full w-[40%]"></div>
+                        <div className="h-full bg-primary rounded-full w-[45%]"></div>
                       </div>
                     </div>
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm">HTML/CSS</span>
-                        <span className="text-xs text-muted-foreground">Junior</span>
+                        <span className="text-sm">Excel Avançado</span>
+                        <span className="text-xs text-muted-foreground">Avançado</span>
                       </div>
                       <div className="h-2 bg-secondary rounded-full">
-                        <div className="h-full bg-primary rounded-full w-[40%]"></div>
+                        <div className="h-full bg-primary rounded-full w-[80%]"></div>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold mb-3">Machine Learning</h4>
+                  <h4 className="font-semibold mb-3">Visualização de Dados</h4>
+                  <div className="space-y-2">
+                    <div>
+                      <div className="flex justify-between mb-1">
+                        <span className="text-sm">Power BI</span>
+                        <span className="text-xs text-muted-foreground">Intermediário</span>
+                      </div>
+                      <div className="h-2 bg-secondary rounded-full">
+                        <div className="h-full bg-primary rounded-full w-[70%]"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between mb-1">
+                        <span className="text-sm">Tableau</span>
+                        <span className="text-xs text-muted-foreground">Junior</span>
+                      </div>
+                      <div className="h-2 bg-secondary rounded-full">
+                        <div className="h-full bg-primary rounded-full w-[50%]"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between mb-1">
+                        <span className="text-sm">Matplotlib / Seaborn</span>
+                        <span className="text-xs text-muted-foreground">Intermediário</span>
+                      </div>
+                      <div className="h-2 bg-secondary rounded-full">
+                        <div className="h-full bg-primary rounded-full w-[60%]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold mb-3">Machine Learning & Estatística</h4>
                   <div className="space-y-2">
                     <div>
                       <div className="flex justify-between mb-1">
@@ -318,34 +349,25 @@ const About = () => {
                         <span className="text-xs text-muted-foreground">Junior</span>
                       </div>
                       <div className="h-2 bg-secondary rounded-full">
-                        <div className="h-full bg-primary rounded-full w-[40%]"></div>
+                        <div className="h-full bg-primary rounded-full w-[50%]"></div>
                       </div>
                     </div>
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm">TensorFlow</span>
-                        <span className="text-xs text-muted-foreground">Junior</span>
+                        <span className="text-sm">Estatística Descritiva</span>
+                        <span className="text-xs text-muted-foreground">Intermediário</span>
                       </div>
                       <div className="h-2 bg-secondary rounded-full">
-                        <div className="h-full bg-primary rounded-full w-[40%]"></div>
+                        <div className="h-full bg-primary rounded-full w-[65%]"></div>
                       </div>
                     </div>
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm">Pandas</span>
+                        <span className="text-sm">Análise Preditiva</span>
                         <span className="text-xs text-muted-foreground">Junior</span>
                       </div>
                       <div className="h-2 bg-secondary rounded-full">
-                        <div className="h-full bg-primary rounded-full w-[40%]"></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-sm">NumPy</span>
-                        <span className="text-xs text-muted-foreground">Junior</span>
-                      </div>
-                      <div className="h-2 bg-secondary rounded-full">
-                        <div className="h-full bg-primary rounded-full w-[40%]"></div>
+                        <div className="h-full bg-primary rounded-full w-[45%]"></div>
                       </div>
                     </div>
                   </div>
