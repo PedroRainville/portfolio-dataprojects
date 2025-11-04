@@ -4,56 +4,30 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
-    id: 1,
-    title: "Sistema CRM Toca Imóveis",
-    category: "automation",
+    id: 7,
+    title: "Análise de Dados — Marketplace Brasileiro (Olist)",
+    category: "data",
     description:
-      "Desenvolvimento de aplicações e soluções de automações com integração de IA",
-    technologies: ["React", "TypeScript", "Node.js", "PostgreSQL"],
+      "Insights acionáveis sobre receita, vendedores, geografia e experiência do cliente.",
+    technologies: ["Python", "Pandas", "Plotly", "SQL", "Google Colab"],
+    url: "https://github.com/PedroRainville/MarketPulse-BR",
+    image: "/marketPulse-BR.png",
   },
   {
-    id: 2,
-    title: "Plataforma RH ClockIn.IT",
-    category: "web",
+    id: 8,
+    title: "Análise de Dados — Saúde na Índia (Vacinas e Infarto)",
+    category: "data",
     description:
-      "Sistema de Recursos Humanos para empresas internacionais com suporte multilíngue",
-    technologies: ["React", "TypeScript", "Swagger API"],
-  },
-  {
-    id: 3,
-    title: "Sistema de Gestão para Câmaras Municipais",
-    category: "web",
-    description:
-      "Projeto de software para acompanhamento de ciclos de vida em câmaras municipais",
-    technologies: ["Delphi", "MySQL", "SQL"],
-  },
-  {
-    id: 4,
-    title: "Análise de Dados com Machine Learning",
-    category: "ml",
-    description: "Projetos de análise e visualização de dados usando ML",
-    technologies: ["Python", "Pandas", "Scikit-learn", "TensorFlow"],
-  },
-  {
-    id: 5,
-    title: "Automação de Processos com IA",
-    category: "automation",
-    description: "Soluções de automação utilizando OpenAI GPT",
-    technologies: ["Python", "OpenAI", "Node.js"],
-  },
-  {
-    id: 6,
-    title: "Dashboard de Análise de Dados",
-    category: "web",
-    description: "Visualização interativa de dados e métricas",
-    technologies: ["React", "TypeScript", "D3.js"],
+      "Exploração de dados de saúde para entender padrões entre vacinação e risco cardíaco.",
+    technologies: ["Python", "Pandas", "Jupyter"],
+    url: "https://github.com/PedroRainville/Analise-de-dados-India",
+    image: "/vacinneIndia.png",
   },
 ];
 
 const categories = [
   { id: "all", label: "TODOS" },
-  { id: "web", label: "DESENVOLVIMENTO WEB" },
-  { id: "automation", label: "AUTOMAÇÃO" },
+  { id: "data", label: "ANÁLISE DE DADOS" },
   { id: "ml", label: "MACHINE LEARNING" },
 ];
 
@@ -95,31 +69,57 @@ const Portfolio = () => {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredProjects.map((project) => (
-            <Card
-              key={project.id}
-              className="group hover:shadow-lg transition-shadow cursor-pointer"
-            >
-              <CardContent className="p-6">
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-md mb-4 flex items-center justify-center">
-                  <span className="text-4xl opacity-50">📊</span>
-                </div>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary">
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+          {filteredProjects.map((project) => {
+            const card = (
+              <Card
+                key={project.id}
+                className="group hover:shadow-lg transition-shadow cursor-pointer"
+              >
+                <CardContent className="p-6">
+                  <div className="aspect-video rounded-md mb-4 overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                    {project.image ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <span className="text-4xl opacity-50">📊</span>
+                    )}
+                  </div>
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <Badge key={tech} variant="secondary">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            );
+
+            return project.url ? (
+              <a
+                key={project.id}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                {card}
+              </a>
+            ) : (
+              card
+            );
+          })}
         </div>
       </div>
     </section>

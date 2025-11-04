@@ -19,7 +19,7 @@ const About = () => {
                 informações valiosas para o negócio.
               </p>
               <p>
-                Amplo conhecimento em ferramentas de análise e visualização de dados, 
+                Conhecimento em ferramentas de análise e visualização de dados, 
                 bancos de dados SQL, Python para análise estatística, Power BI, Excel 
                 avançado e metodologias ágeis para projetos de dados.
               </p>
@@ -36,14 +36,14 @@ const About = () => {
                 <Mail className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-xs text-muted-foreground">Email:</p>
-                  <p className="text-sm">pedro.rainville@email.com</p>
+                  <p className="text-sm">pedrorainville11@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-xs text-muted-foreground">Telefone:</p>
-                  <p className="text-sm">(11) 9XXXX-XXXX</p>
+                  <p className="text-sm">(14) 99793-3005</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -57,7 +57,12 @@ const About = () => {
                 <Linkedin className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-xs text-muted-foreground">LinkedIn:</p>
-                  <a href="#" className="text-sm text-primary hover:underline">
+                  <a
+                    href="https://www.linkedin.com/in/pedrorainville/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-primary hover:underline"
+                  >
                     linkedin.com/in/pedrorainville
                   </a>
                 </div>
@@ -252,11 +257,16 @@ const About = () => {
               
               <div className="space-y-4 mb-8">
                 <div className="border-l-2 border-primary pl-4">
-                  <h4 className="font-bold">Ciências da Computação</h4>
-                  <p className="text-sm text-muted-foreground">2022 - 2026</p>
+                  <h4 className="font-bold">Análise e Desenvolvimento de Sistemas</h4>
+                  <p className="text-sm text-muted-foreground">2021 - 2023</p>
                   <p className="text-sm text-muted-foreground">
-                    Universidade de São Paulo, São Carlos - SP
+                    Universidade de Marília, Marília - SP
                   </p>
+                </div>
+                <div className="border-l-2 border-primary pl-4">
+                  <h4 className="font-bold">Pós-graduação Lato Sensu - Especialização, Ciência de Dados e Inteligência Artificial</h4>
+                  <p className="text-sm text-muted-foreground">fev de 2024 - mar de 2025</p>
+                  <p className="text-sm text-muted-foreground">Universidade de Marília, Marília - SP</p>
                 </div>
               </div>
 
@@ -297,7 +307,7 @@ const About = () => {
                     </div>
                     <div>
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm">Excel Avançado</span>
+                        <span className="text-sm">Excel</span>
                         <span className="text-xs text-muted-foreground">Avançado</span>
                       </div>
                       <div className="h-2 bg-secondary rounded-full">

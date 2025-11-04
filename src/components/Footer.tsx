@@ -11,21 +11,21 @@ const Footer = () => {
           </p>
           <div className="flex justify-center gap-6 mb-6">
             <a
-              href="mailto:pedro.rainville@email.com"
+              href="mailto:pedrorainville11@gmail.com"
               className="text-foreground hover:text-primary transition-colors"
               aria-label="Email"
             >
               <Mail className="h-6 w-6" />
             </a>
             <a
-              href="tel:+5511900000000"
+              href="tel:+5514997933005"
               className="text-foreground hover:text-primary transition-colors"
               aria-label="Telefone"
             >
               <Phone className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/pedrorainville/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-primary transition-colors"
