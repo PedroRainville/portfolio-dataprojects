@@ -5,7 +5,10 @@ const Hero = () => {
       className="min-h-screen flex items-start justify-center pt-32 md:pt-48 relative bg-gradient-to-br from-background via-secondary/20 to-background"
     >
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/me.png')] bg-cover bg-center opacity-40"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-40"
+          style={{ backgroundImage: `url('${import.meta.env.BASE_URL}me.png')` }}
+        ></div>
         <div className="absolute inset-0 bg-gradient-to-b from-background/20 to-background/60"></div>
       </div>
       

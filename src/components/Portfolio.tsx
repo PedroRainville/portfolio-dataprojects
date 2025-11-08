@@ -2,7 +2,19 @@ import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const projects = [
+  {
+    id: 9,
+    title: "Análise de Dados — Uber 2024 (Índia)",
+    category: "data",
+    description:
+      "Análise operacional e financeira de corridas: frequência, cancelamentos, métricas de tempo, localização e tipos de veículo.",
+    technologies: ["Python", "Pandas", "Jupyter", "Data Analysis"],
+    url: "https://github.com/PedroRainville/analise-de-dados-UberDataSet",
+    image: `${baseUrl}uber.png`,
+  },
   {
     id: 7,
     title: "Análise de Dados — Marketplace Brasileiro (Olist)",
@@ -11,7 +23,7 @@ const projects = [
       "Insights acionáveis sobre receita, vendedores, geografia e experiência do cliente.",
     technologies: ["Python", "Pandas", "Plotly", "SQL", "Google Colab"],
     url: "https://github.com/PedroRainville/MarketPulse-BR",
-    image: "/marketPulse-BR.png",
+    image: `${baseUrl}marketPulse-BR.png`,
   },
   {
     id: 8,
@@ -21,7 +33,7 @@ const projects = [
       "Exploração de dados de saúde para entender padrões entre vacinação e risco cardíaco.",
     technologies: ["Python", "Pandas", "Jupyter"],
     url: "https://github.com/PedroRainville/Analise-de-dados-India",
-    image: "/vacinneIndia.png",
+    image: `${baseUrl}vacinneIndia.png`,
   },
 ];
 
