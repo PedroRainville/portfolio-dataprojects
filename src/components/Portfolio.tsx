@@ -57,7 +57,7 @@ const Portfolio = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Portfolio de Projetos</h2>
           <p className="text-muted-foreground">
-            Demonstração de soluções de problemas do negócio.com as ferramentas e
+            Demonstração de soluções de problemas do negócio com as ferramentas e
             técnicas que domino
           </p>
         </div>
