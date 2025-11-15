@@ -6,12 +6,22 @@ const baseUrl = import.meta.env.BASE_URL;
 
 const projects = [
   {
+    id: 10,
+    title: "Análise de Dados — Shopping Vendas",
+    category: "data",
+    description:
+      "Projeto completo de análise de dados com Python, SQL e Looker Studio, explorando 3.900 compras para gerar insights sobre comportamento, tendências, segmentação e dashboards interativos para decisões estratégicas.",
+    technologies: ["Python", "SQL", "Looker Studio", "Data Analysis"],
+    url: "https://github.com/PedroRainville/analise-de-dados-ShoppingClient",
+    image: `${baseUrl}shoppingClient.png`,
+  },
+  {
     id: 9,
     title: "Análise de Dados — Uber 2024 (Índia)",
     category: "data",
     description:
       "Análise operacional e financeira de corridas: frequência, cancelamentos, métricas de tempo, localização e tipos de veículo.",
-    technologies: ["Python", "Pandas", "Jupyter", "Data Analysis"],
+    technologies: ["Python", "Pandas", "Google Colab", "Data Analysis"],
     url: "https://github.com/PedroRainville/analise-de-dados-UberDataSet",
     image: `${baseUrl}uber.png`,
   },
@@ -31,7 +41,7 @@ const projects = [
     category: "data",
     description:
       "Exploração de dados de saúde para entender padrões entre vacinação e risco cardíaco.",
-    technologies: ["Python", "Pandas", "Jupyter"],
+    technologies: ["Python", "Pandas", "Google Colab"],
     url: "https://github.com/PedroRainville/Analise-de-dados-India",
     image: `${baseUrl}vacinneIndia.png`,
   },
