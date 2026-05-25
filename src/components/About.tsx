@@ -13,15 +13,14 @@ const About = () => {
             </CardHeader>
             <CardContent className="space-y-4 text-sm">
               <p>
-                Analista e Cientista de Dados com experiência em análise de dados, 
-                visualização de informações e desenvolvimento de insights estratégicos 
-                para tomada de decisão. Especialista em transformar dados brutos em 
-                informações valiosas para o negócio.
-              </p>
-              <p>
-                Conhecimento em ferramentas de análise e visualização de dados, 
-                bancos de dados SQL, Python para análise estatística, Power BI, Excel 
-                avançado e metodologias ágeis para projetos de dados.
+                Analista de Dados com especialização em Ciência de Dados e IA, focado em transformar
+                grandes volumes de dados em inteligência estratégica para o negócio. Experiente em
+                projetos de BI de ponta a ponta, atuo desde a construção de pipelines de dados (ETL)
+                e modelagem dimensional até o desenvolvimento de dashboards de alta performance
+                para suporte à decisão executiva. Especialista em SQL Server, Power BI (DAX
+                avançado) e Python, com histórico comprovado na modelagem de KPIs críticos (como
+                EBITDA, Margem de Lucro e Turnover) e na automação de processos que geram eficiência
+                operacional e redução de tempo.
               </p>
             </CardContent>
           </Card>
@@ -50,7 +49,7 @@ const About = () => {
                 <MapPin className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-xs text-muted-foreground">Localização:</p>
-                  <p className="text-sm">Marília, São Paulo, Brasil</p>
+                  <p className="text-sm">São Paulo, São Paulo, Brasil</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -83,6 +82,40 @@ const About = () => {
               </h3>
               
               <div className="space-y-6">
+                {/* Cacau Foods */}
+                <div className="border-l-2 border-primary pl-4">
+                  <div className="flex items-start gap-2 mb-2">
+                    <span className="w-2 h-2 bg-primary rounded-full mt-2"></span>
+                    <div>
+                      <h4 className="font-bold">Analista de Sistemas Júnior (BI & Dados)</h4>
+                      <p className="text-sm text-muted-foreground">Cacau Foods · Tempo integral</p>
+                      <p className="text-xs text-muted-foreground">jan de 2026 - mai de 2026 · 5 meses</p>
+                    </div>
+                  </div>
+                  <ul className="text-sm space-y-1 list-disc list-inside ml-6">
+                    <li>Desenvolvimento de dashboards no Power BI para áreas estratégicas</li>
+                    <li>Automação de relatórios reduzindo tempo operacional</li>
+                    <li>Construção de ETL com SQL Server (T-SQL)</li>
+                    <li>Modelagem de KPIs (EBITDA, margem, turnover)</li>
+                    <li>Suporte analítico e resolução de inconsistências de dados</li>
+                  </ul>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Atuo na área de dados e sistemas, desenvolvendo soluções analíticas e
+                    customizações no ERP para apoiar a tomada de decisão da empresa.
+                  </p>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Desenvolvo dashboards estratégicos no Power BI com modelagem dimensional
+                    e medidas em DAX, centralizando indicadores de áreas como comercial,
+                    financeiro e operações em painéis interativos. Construo queries no SQL
+                    Server para extração, tratamento e disponibilização de dados, estruturando
+                    views e pipelines de ETL que alimentam os relatórios automaticamente,
+                    eliminando processos manuais e garantindo atualização recorrente das informações.
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-2">
+                    Stack: Power BI, DAX, SQL Server (T-SQL), ETL, ADVPL, TOTVS Protheus, Excel
+                  </p>
+                </div>
+
                 {/* Toca Imóveis */}
                 <div className="border-l-2 border-primary pl-4">
                   <div className="flex items-start gap-2 mb-2">
@@ -93,7 +126,7 @@ const About = () => {
                         Toca Imóveis · Tempo integral
                       </p>
                       <p className="text-xs text-muted-foreground">
-                        mai de 2025 - o momento · 6 meses
+                        mai de 2025 - out de 2025 · 7 meses
                       </p>
                       <p className="text-xs text-muted-foreground mb-2">
                         Marília, São Paulo, Brasil · Presencial
@@ -138,34 +171,6 @@ const About = () => {
                     <li>
                       Acompanhamento periódico de máquinas para evitar falhas e prolongar
                       vida útil
-                    </li>
-                  </ul>
-                </div>
-
-                {/* SpinShow */}
-                <div className="border-l-2 border-primary pl-4">
-                  <div className="flex items-start gap-2 mb-2">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2"></span>
-                    <div>
-                      <h4 className="font-bold">Serviços para Eventos</h4>
-                      <p className="text-sm text-muted-foreground">
-                        SpinShow · Freelance
-                      </p>
-                      <p className="text-xs text-muted-foreground">
-                        mai de 2023 - out de 2025 · 2 anos 6 meses
-                      </p>
-                      <p className="text-xs text-muted-foreground mb-2">
-                        Marília, São Paulo, Brasil · Presencial
-                      </p>
-                    </div>
-                  </div>
-                  <ul className="text-sm space-y-1 list-disc list-inside ml-6">
-                    <li>
-                      Recepcionar e orientar convidados sobre plataformas imersivas
-                    </li>
-                    <li>Operar equipamentos de vídeo com foco em qualidade e segurança</li>
-                    <li>
-                      Apoiar montagem e desmontagem de equipamentos no local do evento
                     </li>
                   </ul>
                 </div>

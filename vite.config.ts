@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
-import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   base: mode === "production" ? "/portfolio-dataprojects/" : "/",
@@ -13,7 +12,7 @@ export default defineConfig(({ mode }) => ({
     outDir: "docs",
     emptyOutDir: true,
   },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [react()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
